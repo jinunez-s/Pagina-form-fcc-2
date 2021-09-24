@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+        This is a example of a form
+    </p>
+
+   <form action="" id="survey-form">
+    <div class="form-group">
+        <label for="name" id="name-label">Nombre: </label>
+        <input type="text" id="name" name="name" class="form-control" required placeholder="Julio">
+    </div>
+    <div class="form-group">
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email" placeholder="ejemplo@ejemplo.com" required >
+    </div>
+    <div class="form-group">
+        <label for="number" id="number-label">Edad</label>
+        <input type="number" id="number" placeholder="Age" name="age" min="10" max="99" class="form-control">
+    </div>
+    <div class="form-group">
+        <p>Que opción te describe mejor</p>
+        <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full time job</option>
+
+        </select>
+    </div>
+    <div class="form-group">
+        <p>Opciones</p>
+        <label for="">
+            <input type="radio" name="lista-opciones" value="opcion1" class="input-radio"> Opción 1
+        </label>
+        <label for="">
+            <input type="radio" name="lista-opciones" value="opcion2" class="input-radio"> Opción 2
+        </label>
+        <label for="">
+            <input type="radio" name="lista-opciones" value="opcion3" class="input-radio"> Opción 3
+        </label>
+        <label for="">
+            <input type="radio" name="lista-opciones" value="opcion4" class="input-radio"> Opción 4
+        </label>
+    </div>
+
+    <div class="form-group">
+        <p>Lista de checkboxes</p>
+        <label>
+            <input type="checkbox" value="Opcion-1" name="prefer" class="input-checkbox">
+            Opción 1
+        </label>
+        <label>
+            <input type="checkbox" value="Opcion-2" name="prefer" class="input-checkbox">
+            Opción 2
+        </label>
+        <label>
+            <input type="checkbox" value="Opcion-3" name="prefer" class="input-checkbox">
+            Opción 3
+        </label>
+    </div>
+    
+    <div class="form-group">
+        <p>¿Algún comentario?</p>
+        <textarea name="comment" id="comments" cols="30" rows="10" class="input-area" placeholder="Ingrese su comentario aquí..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+    
+    
+
+
+
+
+   </form>
+</body>
+</html>
